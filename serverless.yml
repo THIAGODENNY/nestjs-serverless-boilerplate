@@ -1,0 +1,17 @@
+service:
+  name: nest-serverless-boilerplate
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-plugin-optimize
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+
+functions:
+  main:
+    handler: src/lambda.handler
+    events:
+      - http: ANY /
