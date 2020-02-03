@@ -68,7 +68,7 @@ $ npm run test:cov
 
 ```bash
 # deploy aws lambda (default in serverless.yml)
-$ serverless deploy
+$ npx serverless deploy
 ```
 
 ## Support
